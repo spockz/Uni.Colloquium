@@ -1,0 +1,72 @@
+\definecolor{syntax}{RGB}{116, 139, 0}
+\definecolor{datatype}{RGB}{181, 137, 0}
+\definecolor{constructor}{RGB}{181, 137, 0}
+\definecolor{class}{RGB}{181, 137, 0}
+\definecolor{fieldname}{RGB}{0, 0, 162}
+% \definecolor{function}{RGB}{38, 139, 210}
+\definecolor{function}{RGB}{34, 34, 34}
+\definecolor{constant}{RGB}{38, 139, 210}
+\definecolor{numeral}{RGB}{42, 161, 152}
+\definecolor{infixoperator}{RGB}{42, 161, 152}
+\definecolor{keyword}{RGB}{42, 161, 152}
+\definecolor{special1}{RGB}{42, 161, 152}
+\definecolor{prelude}{RGB}{42, 161, 152}
+\definecolor{string}{RGB}{131, 148, 150}
+\definecolor{char}{RGB}{181, 137, 0}
+\definecolor{braces}{RGB}{220, 49, 46}
+
+\newcommand{\lhsCHsyntax}[1]{\color{syntax}{#1}}
+\newcommand{\lhsCHfunction}[1]{\color{function}{#1}}
+\newcommand{\lhsCHinfixoperator}[1]{\color{infixoperator}{#1}}
+\newcommand{\lhsCHprelude}[1]{\color{prelude}{#1}}
+\newcommand{\lhsCHkeyword}[1]{\color{keyword}{#1}}
+\newcommand{\lhsCHconstructor}[1]{\color{constructor}{#1}}
+\newcommand{\lhsCHtype}[1]{\color{datatype}{#1}}
+\newcommand{\lhsCHclass}[1]{\color{class}{#1}}
+\newcommand{\lhsCHconstant}[1]{\color{constant}{#1}}
+\newcommand{\lhsCHbraces}[1]{\color{braces}{#1}}
+
+\renewcommand{\Conid}[1]{{\lhsCHconstructor{\mathit{#1}}}}
+\renewcommand{\Varid}[1]{{\lhsCHfunction{\mathit{#1}}}}
+
+%subst char a     = "{\color{char}\text{\tt ''" a "''}}"
+%subst string a   = "{\color{string}\text{\tt \char34 " a "\char34}}"
+%subst numeral a  = "{\color{numeral}{ " a " }}"
+
+%format data      = "\mathbf{\lhsCHkeyword{data}}"
+%format where     = "\mathbf{\lhsCHkeyword{where}}"
+%format let       = "\mathbf{\lhsCHkeyword{let}}"
+%format in        = "\mathbf{\lhsCHkeyword{in}}"
+%format class     = "\mathbf{\lhsCHkeyword{class}}"
+%format deriving  = "\mathbf{\lhsCHkeyword{deriving}}"
+%format do        = "\mathbf{\lhsCHkeyword{do}}"
+%format case      = "\mathbf{\lhsCHkeyword{case}}"
+%format of        = "\mathbf{\lhsCHkeyword{of}}"
+%format instance  = "\mathbf{\lhsCHkeyword{instance}}"
+%format import    = "\mathbf{\lhsCHkeyword{import}}"
+%format export    = "\mathbf{\lhsCHkeyword{export}}"
+%format foreign   = "\mathbf{\lhsCHkeyword{foreign}}"
+
+
+
+%format (         = "{\lhsCHbraces{(}}"
+%format )         = "{\lhsCHbraces{)}}"
+%format [         = "{\lhsCHbraces{[}}"
+%format ]         = "{\lhsCHbraces{]}}"
+%format {         = "{\lhsCHbraces{\{}}"
+%format }         = "{\lhsCHbraces{\}}}"
+%format \         = "{\lhsCHkeyword{\lambda}}"
+
+%format ::        = "\mathbin{\lhsCHkeyword{::}}"
+%format =         = "\mathrel{\lhsCHkeyword{=}}"
+%format $         = "\mathbin{\lhsCHkeyword{\$}}"
+%format +         = "\mathbin{\lhsCHkeyword{+}}"
+%format _         = "{\lhsCHbraces{\anonymous}}"
+%format <-        = "\mathbin{\lhsCHkeyword{\leftarrow}}"
+%format ->        = "\mathbin{\lhsCHkeyword{\to}}"
+%format =>        = "\mathbin{\lhsCHkeyword{\Rightarrow}}"
+%format /=        = "\mathbin{\lhsCHkeyword{\not\equiv}}"
+%format /         = "\mathbin{\lhsCHkeyword{/}}"
+%format ,         = "{\lhsCHbraces{,}}\!~"
+% the , is not being rendered quite right. this is just a hack
+
